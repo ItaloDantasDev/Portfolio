@@ -1,0 +1,105 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Adicionando uma imagem de fundo ao body */
+body {
+  background-image: url('img/bg.jpg'); /* Caminho da imagem */
+  background-size: cover; /* A imagem cobre toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Impede que a imagem se repita */
+  background-attachment: fixed; /* A imagem fica fixa ao rolar a página */
+  font-family: Arial, sans-serif;
+  color: white; /* Cor do texto para contraste */
+}
+
+.logo {
+  display: flex;
+  flex-direction: column; /* Alinha os nomes um em cima do outro */
+  font-size:23px ;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 50px;
+}
+
+
+.nav-links {
+  list-style: none;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  /* gap: 1.2rem; */
+  gap: 30px;
+  font-style: none;
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: white; /* Cor branca para o texto */
+  font-size: 18px;
+  transition: color 0.8s ease; /* Transição suave ao passar o mouse */
+}
+a:hover {
+  color: #18ceee; /* Cor amarela ao passar o mouse */
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('caminho/para/sua-imagem.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Introdução no topo */
+.intro h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Container para as divisões Python e React */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 50px;
+}
+
+/* Estilos para as divisões de Python e React */
+.skill {
+  flex: 1;
+  padding: 40px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+
+
