@@ -70,36 +70,49 @@ a:hover {
   padding: 20px;
 }
 
+.foto img{
+  height: 300px;
+  border: solid;
+  border-radius: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.apresentacao{
+  display: flex;
+}
+
+
+
 /* Introdução no topo */
 .intro h1 {
   font-size: 48px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .intro p {
   font-size: 24px;
   margin-bottom: 30px;
+  text-align: left;
 }
 
-/* Container para as divisões Python e React */
-.skills-container {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  max-width: 1200px;
-  margin-top: 50px;
+h1,p{
+  color: black;
 }
 
-/* Estilos para as divisões de Python e React */
-.skill {
-  flex: 1;
-  padding: 40px;
-  margin: 10px;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+.galeria{
+  background-color: #333;
+  border-radius: 18px;
 }
-
+.galeria img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0px;
+  padding: 20px;
+  border-radius: 18px;
+}
 
 
 
