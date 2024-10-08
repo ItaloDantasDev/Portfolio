@@ -5,6 +5,7 @@ html {
   font-family: Arial;
   height: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Adicionando uma imagem de fundo ao body */
@@ -71,15 +72,33 @@ a:hover {
 }
 
 .foto img{
-  height: 300px;
+  height: 250px;
   border: solid;
   border-radius: 18px;
   margin-left: 30px;
   margin-top: 20px;
+  border-color: #333;
 }
 
 .apresentacao{
   display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+.nome{
+  color: #18ceee;
+  padding: 7px;
+  background-color: #333;
+  border-radius: 18px;
+  margin-top: 10px ;
+}
+
+
+.tecnologia-intro{
+  justify-content: center;
+  color: aliceblue;
+  font-weight: 500;
 }
 
 
@@ -94,7 +113,6 @@ a:hover {
 .intro p {
   font-size: 24px;
   margin-bottom: 30px;
-  text-align: left;
 }
 
 h1,p{
@@ -104,6 +122,7 @@ h1,p{
 .galeria{
   background-color: #333;
   border-radius: 18px;
+
 }
 .galeria img{
   width: 100px;
@@ -111,8 +130,34 @@ h1,p{
   object-fit: cover;
   margin: 0px;
   padding: 20px;
-  border-radius: 18px;
+  border-radius: 30px;
 }
 
 
+/* Aqui foi o chat gpt */
+/* 
+.galeria {
+  display: flex;
+  flex-wrap: wrap; /* Permite que as imagens quebrem linha quando necessário */
+  justify-content: center; /* Centraliza as imagens */
+  gap: 12px; /* Espaçamento entre as imagens */
+  padding: 20px;
+  background-color: #333;
+  border-radius: 18px;
+}
 
+.galeria img {
+  width: 80px; /* Largura inicial */
+  height: auto; /* Mantém a proporção */
+  object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
+  border-radius: 18px;
+  transition: transform 0.3s ease; /* Efeito de hover suave */
+}
+
+/* Hover para aumentar a imagem */
+.galeria img:hover {
+  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+
+ */
