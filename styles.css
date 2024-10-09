@@ -33,6 +33,8 @@ body {
   align-items: center;
   padding: 10px 20px;
   height: 50px;
+  position: sticky;
+  z-index: 1000;
 }
 
 
@@ -133,31 +135,46 @@ h1,p{
   border-radius: 30px;
 }
 
+/* Fim parte do Index / Main 
 
-/* Aqui foi o chat gpt */
-/* 
-.galeria {
+Inicio da parte de Projetos
+*/
+
+.project-card img{
+  transition: transform 0.3s ease;
+  border: solid;
+  border-color: #333;
+
+  
+}
+
+img:hover{
+  transform: scale(1.1);
+  }
+
+.projects-section{
+  margin-top: 40px;
+  margin-left: 30px;
   display: flex;
-  flex-wrap: wrap; /* Permite que as imagens quebrem linha quando necessário */
-  justify-content: center; /* Centraliza as imagens */
-  gap: 12px; /* Espaçamento entre as imagens */
-  padding: 20px;
-  background-color: #333;
-  border-radius: 18px;
-}
+  justify-content: space-between;
 
-.galeria img {
-  width: 80px; /* Largura inicial */
-  height: auto; /* Mantém a proporção */
-  object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
-  border-radius: 18px;
-  transition: transform 0.3s ease; /* Efeito de hover suave */
-}
-
-/* Hover para aumentar a imagem */
-.galeria img:hover {
-  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+  a{
+    font-weight: bold;
+    color: #18ceee;
+    padding: 9px;
+    background-color: #333;
+    border-radius: 18px;
+    margin-top: 10px ;
+  }
 }
 
 
- */
+  
+
+.projects-grid {
+  display: flex; /* Torna o container um flexbox */
+  flex-wrap: wrap; /* Permite que os itens passem para a linha seguinte, se necessário */
+  justify-content: space-between; /* Distribui os itens horizontalmente com espaço entre eles */
+  gap: 20px; /* Espaçamento entre os project-cards */
+  margin-top: 50px;
+}
