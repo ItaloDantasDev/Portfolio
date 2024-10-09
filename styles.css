@@ -178,3 +178,18 @@ img:hover{
   gap: 20px; /* Espaçamento entre os project-cards */
   margin-top: 50px;
 }
+
+@media (max-width: 600px) {
+  .navbar {
+      flex-direction: column; /* Empilha os elementos na navbar */
+      align-items: flex-start;
+  }
+
+  .nav-links {
+      flex-direction: column; /* Lista os links verticalmente */
+  }
+
+  .nav-links li {
+      margin: 10px 0; /* Espaçamento vertical entre os links */
+  }
+}
