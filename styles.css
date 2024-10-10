@@ -8,6 +8,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.space-grotesk-spacefont {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /* Adicionando uma imagem de fundo ao body */
 body {
   background-image: url('img/bg.jpg'); /* Caminho da imagem */
@@ -23,6 +31,7 @@ body {
   display: flex;
   flex-direction: column; /* Alinha os nomes um em cima do outro */
   font-size:23px ;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .navbar {
@@ -35,6 +44,8 @@ body {
   height: 50px;
   position: sticky;
   z-index: 1000;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 
@@ -139,6 +150,10 @@ h1,p{
 
 Inicio da parte de Projetos
 */
+.project-card h3{
+  color: #333;
+}
+
 
 .project-card img{
   transition: transform 0.3s ease;
@@ -153,10 +168,11 @@ img:hover{
   }
 
 .projects-section{
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 30px;
   display: flex;
   justify-content: space-between;
+  
 
   a{
     font-weight: bold;
@@ -165,6 +181,15 @@ img:hover{
     background-color: #333;
     border-radius: 18px;
     margin-top: 10px ;
+  }
+
+  h2{
+    color: #ccc ;
+    background-color: #18181f;
+    display: inline;
+    border-radius: 18px;
+    padding: 10px;
+  
   }
 }
 
@@ -176,7 +201,12 @@ img:hover{
   flex-wrap: wrap; /* Permite que os itens passem para a linha seguinte, se necessário */
   justify-content: space-between; /* Distribui os itens horizontalmente com espaço entre eles */
   gap: 20px; /* Espaçamento entre os project-cards */
-  margin-top: 50px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  h2{
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -193,3 +223,200 @@ img:hover{
       margin: 10px 0; /* Espaçamento vertical entre os links */
   }
 }
+
+.sobre-secao{
+  margin-left: 30px;
+  margin-top: 20px;
+
+  .container-sobre{
+    width: 50%; /* Largura da div */
+    margin: 0 50px; /* Centraliza horizontalmente */
+    font-family: "Space Grotesk", sans-serif;
+  }
+}
+
+.sobre-secao h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sobre-secao p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+  max-width: 800px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-weight: 400;
+
+  
+  background: rgba(144, 151, 212, 0.3); 
+  backdrop-filter: blur(1px); /* Desfoque de fundo */
+  border: 1px solid rgba(56, 41, 41, 0.3); /* Borda semi-transparente */
+  padding: 30px;
+  border-radius: 18px; /* Bordas arredondadas */
+  max-width: 400px;
+  color: #18181f; /* Cor do texto */
+  text-align: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  opacity: 1;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer p{
+  margin: 0;
+  font-size: 1rem;
+  color: rgb(100, 116, 131);
+}
+
+/* Contato */
+
+
+/* Seção Contato */
+.contato-secao {
+  text-align: center;
+}
+
+.contato-secao h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contato-secao p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Estilos do Formulário */
+.form-contato {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-grupo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-grupo label {
+  font-size: 1.1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-grupo input, 
+.form-grupo textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-grupo input:focus, 
+.form-grupo textarea:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Informações de Contato */
+.info-contato {
+  margin-top: 40px;
+  color: #333;
+}
+
+.info-contato h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.info-contato p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.info-contato a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.info-contato a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form-contato-container {
+  width: 60%; /* Tamanho do bloco que contém o título, o parágrafo e o formulário */
+  display: flex;
+  flex-direction: column; /* Alinha os elementos verticalmente */
+}
+
+.form-contato {
+  width: 100%; /* O formulário ocupa toda a largura disponível dentro do bloco */
+}
+
+.info-contato {
+  width: 35%; /* Tamanho da área de contato */
+  text-align: left; /* Alinha o texto à esquerda */
+  margin-top: 270px; 
+  border: solid;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-radius: 18px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 10px;
+  display: block;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+
+}
+
+
+
+
