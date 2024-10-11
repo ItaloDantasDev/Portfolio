@@ -5,66 +5,78 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Italo Dantas' Devfolio</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ruge+Boogie&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <nav class="navbar">
-            <a href="index.html" class="logo">
-                <span class="first-name">Italo</span>
-                <span class="last-name">Dantas</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-
-        <section id="contato" class="contato-secao">
-            <div class="container">
-                <!-- Bloco com o título, parágrafo e formulário -->
-                <div class="form-contato-container">
-                    <h2>Entre em Contato</h2>
-                    <p>Se você tiver alguma pergunta ou quiser discutir um projeto, entre em contato comigo!</p>
-            
-                    <!-- Formulário de Contato -->
-                    <form class="form-contato" action="#" method="post">
-                        <div class="form-grupo">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-                        </div>
-                        
-                        <div class="form-grupo">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Seu email" required>
-                        </div>
-            
-                        <div class="form-grupo">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
-                        </div>
-            
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-            
-                <!-- Informações de Contato -->
-                <div class="info-contato">
-                    <h3>Ou entre em contato diretamente:</h3>
-                    <p>Email: <a href="mailto:italo@example.com">fimd@cesar.school</a></p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/italo-mdantas/">italo-mdantas/</a></p>
-                    <p>Github: <a href="https://github.com/ItaloDantasDev">ItaloDantasDev</a></p>
-                </div>
+        <div class="wrapper">
+            <div>
+                <nav class="navbar">
+                    <a href="index.html" class="logo">
+                        <span class="first-name">Italo</span>
+                        <span class="last-name">Dantas</span>
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Ruge+Boogie&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+                    </ul>
+                </nav>
             </div>
-        </section>
+            
+            <main>
+                <section id="contato" class="contato-secao">
+                    <div class="container">
+                        <!-- Bloco com o título, parágrafo e formulário -->
+                        <div class="form-contato-container">
+                            <h2>Entre em Contato</h2>
+                            <p>Se você tiver alguma pergunta ou quiser discutir um projeto, entre em contato comigo!</p>
+                    
+                            <!-- Formulário de Contato -->
+                            <form class="form-contato" action="#" method="post">
+                                <div class="form-grupo">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                                </div>
+                                
+                                <div class="form-grupo">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Seu email" required>
+                                </div>
+                    
+                                <div class="form-grupo">
+                                    <label for="mensagem">Mensagem</label>
+                                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+                                </div>
+                    
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+
+                            <!-- Informações de Contato -->
+                        <div class="info-contato">
+                            <h3>Ou entre em contato diretamente:</h3>
+                            <p>Email: <a href="mailto:fimd@cesar.school">Italo@Cesar</a></p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/italo-mdantas/">italo-mdantas/</a></p>
+                            <p>Github: <a href="https://github.com/ItaloDantasDev">ItaloDantasDev</a></p>
+                        </div>
+                    </div>
+                </section>
         
 
-
-
+            </main>
+            
+            
+        
     <!-- Rodapé -->
-    <footer class="footer">
-        <p>&copy; 2024 Todos os direitos reservados | Italo Dantas</p>
-    </footer>
-
+            <footer class="footer">
+                <p>&copy; 2024 Todos os direitos reservados | Italo Dantas</p>
+            </footer>
+        </div>
     </body>
 </html>

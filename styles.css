@@ -1,3 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Altura mínima da página é igual à altura da janela */
+}
+
+/* Main cresce para ocupar o espaço disponível */
+main {
+  flex: 1;
+  /* Faz o main expandir para ocupar o espaço disponível */
+}
+
+/* Estilização do footer */
+
+
 body,
 html {
   margin: 0;
@@ -19,19 +35,26 @@ html {
 
 /* Adicionando uma imagem de fundo ao body */
 body {
-  background-image: url('img/bg.jpg'); /* Caminho da imagem */
-  background-size: cover; /* A imagem cobre toda a tela */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Impede que a imagem se repita */
-  background-attachment: fixed; /* A imagem fica fixa ao rolar a página */
+  background-image: url('img/bg.jpg');
+  /* Caminho da imagem */
+  background-size: cover;
+  /* A imagem cobre toda a tela */
+  background-position: center;
+  /* Centraliza a imagem */
+  background-repeat: no-repeat;
+  /* Impede que a imagem se repita */
+  background-attachment: fixed;
+  /* A imagem fica fixa ao rolar a página */
   font-family: "Space Grotesk", sans-serif;
-  color: white; /* Cor do texto para contraste */
+  color: white;
+  /* Cor do texto para contraste */
 }
 
 .logo {
   display: flex;
-  flex-direction: column; /* Alinha os nomes um em cima do outro */
-  font-size:23px ;
+  flex-direction: column;
+  /* Alinha os nomes um em cima do outro */
+  font-size: 23px;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -62,13 +85,18 @@ body {
 }
 
 a {
-  text-decoration: none; /* Remove o sublinhado */
-  color: white; /* Cor branca para o texto */
+  text-decoration: none;
+  /* Remove o sublinhado */
+  color: white;
+  /* Cor branca para o texto */
   font-size: 18px;
-  transition: color 0.8s ease; /* Transição suave ao passar o mouse */
+  transition: color 0.8s ease;
+  /* Transição suave ao passar o mouse */
 }
+
 a:hover {
-  color: #18ceee; /* Cor amarela ao passar o mouse */
+  color: #18ceee;
+  /* Cor amarela ao passar o mouse */
 }
 
 .home {
@@ -84,7 +112,7 @@ a:hover {
   padding: 20px;
 }
 
-.foto img{
+.foto img {
   height: 250px;
   border: solid;
   border-radius: 18px;
@@ -93,23 +121,24 @@ a:hover {
   border-color: #333;
 }
 
-.apresentacao{
+.apresentacao {
   display: flex;
   text-align: center;
   justify-content: center;
   margin-top: 0px;
 }
-.nome{
+
+.nome {
   color: #18ceee;
   padding: 7px;
   background-color: #333;
   border-radius: 18px;
-  margin-top: 10px ;
+  margin-top: 10px;
   font-family: 'Courier New', Courier, monospace;
 }
 
 
-.tecnologia-intro{
+.tecnologia-intro {
   justify-content: center;
   color: aliceblue;
   font-weight: 500;
@@ -129,16 +158,18 @@ a:hover {
   margin-bottom: 30px;
 }
 
-h1,p{
+h1,
+p {
   color: black;
 }
 
-.galeria{
+.galeria {
   background-color: #333;
   border-radius: 18px;
 
 }
-.galeria img{
+
+.galeria img {
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -149,68 +180,82 @@ h1,p{
 
 /* Fim parte do Index / Main 
 
-Inicio da parte de Projetos
-*/
-.project-card h3{
+Inicio da parte de Projetos -----------------------------------------------------------------*/
+.project-card h3 {
   color: #333;
 }
 
+.container-projetos h2:hover{
+  color: #18ceee;
+}
 
-.project-card img{
+.project-card img {
   transition: transform 0.3s ease;
   border: solid;
   border-color: #333;
 
-  
+
 }
 
-img:hover{
+img:hover {
   transform: scale(1.1);
-  }
+}
 
-.projects-section{
+.project-links a{
+  background-color: #333;
+  font-weight: bold;
+  color: #18ceee;
+  padding: 9px;
+  border-radius: 18px;
+  margin-top: 10px;
+}
+
+.projects-section {
   margin-top: 30px;
   margin-left: 30px;
   display: flex;
   justify-content: space-between;
-  
 
-  a{
-    font-weight: bold;
-    color: #18ceee;
-    padding: 9px;
-    background-color: #333;
-    border-radius: 18px;
-    margin-top: 10px ;
-  }
 
-  h2{
-    color: #ccc ;
-    background-color: #18181f;
+  /* Projetos */
+  h2 {
+    color:aliceblue;
+    background-color: rgba(0, 0, 0, 0.700);
     display: inline;
     border-radius: 18px;
-    padding: 10px;
+    padding: 7px;
   }
 }
 
 
 .projects-grid {
-  display: flex; /* Torna o container um flexbox */
-  flex-wrap: wrap; /* Permite que os itens passem para a linha seguinte, se necessário */
-  justify-content: space-between; /* Distribui os itens horizontalmente com espaço entre eles */
-  gap: 20px; /* Espaçamento entre os project-cards */
+  display: flex;
+  /* Torna o container um flexbox */
+  flex-wrap: wrap;
+  /* Permite que os itens passem para a linha seguinte, se necessário */
+  justify-content: space-between;
+  /* Distribui os itens horizontalmente com espaço entre eles */
+  gap: 20px;
+  /* Espaçamento entre os project-cards */
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Garante três colunas de tamanho igual */
+  gap: 20px; /* Espaçamento entre os cards */
   margin-top: 40px;
   margin-bottom: 30px;
 
 }
 
-.sobre-secao{
+.sobre-secao {
   margin-left: 30px;
   margin-top: 20px;
 
-  .container-sobre{
-    width: 50%; /* Largura da div */
-    margin: 0 50px; /* Centraliza horizontalmente */
+  .container-sobre {
+    width: 50%;
+    /* Largura da div */
+    margin: 0 50px;
+    /* Centraliza horizontalmente */
     font-family: "Space Grotesk", sans-serif;
   }
 }
@@ -230,15 +275,20 @@ img:hover{
   margin-bottom: 60px;
   font-weight: 400;
 
-  background: rgba(144, 151, 212, 0.3); 
-  backdrop-filter: blur(1px); /* Desfoque de fundo */
-  border: 1px solid rgba(56, 41, 41, 0.3); /* Borda semi-transparente */
+  background: rgba(144, 151, 212, 0.3);
+  backdrop-filter: blur(1px);
+  /* Desfoque de fundo */
+  border: 1px solid rgba(56, 41, 41, 0.3);
+  /* Borda semi-transparente */
   padding: 30px;
-  border-radius: 18px; /* Bordas arredondadas */
+  border-radius: 18px;
+  /* Bordas arredondadas */
   max-width: 400px;
-  color: #18181f; /* Cor do texto */
+  color: #18181f;
+  /* Cor do texto */
   text-align: center;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
   opacity: 1;
 }
 
@@ -251,7 +301,8 @@ img:hover{
   bottom: 0;
   width: 100%;
 }
-.footer p{
+
+.footer p {
   margin: 0;
   font-size: 1rem;
   color: rgb(100, 116, 131);
@@ -296,7 +347,7 @@ img:hover{
   margin-bottom: 5px;
 }
 
-.form-grupo input, 
+.form-grupo input,
 .form-grupo textarea {
   width: 100%;
   padding: 10px;
@@ -306,7 +357,7 @@ img:hover{
   box-sizing: border-box;
 }
 
-.form-grupo input:focus, 
+.form-grupo input:focus,
 .form-grupo textarea:focus {
   outline: none;
   border-color: #007BFF;
@@ -358,19 +409,24 @@ button[type="submit"]:hover {
 }
 
 .form-contato-container {
-  width: 60%; /* Tamanho do bloco que contém o título, o parágrafo e o formulário */
+  width: 60%;
+  /* Tamanho do bloco que contém o título, o parágrafo e o formulário */
   display: flex;
-  flex-direction: column; /* Alinha os elementos verticalmente */
+  flex-direction: column;
+  /* Alinha os elementos verticalmente */
 }
 
 .form-contato {
-  width: 100%; /* O formulário ocupa toda a largura disponível dentro do bloco */
+  width: 100%;
+  /* O formulário ocupa toda a largura disponível dentro do bloco */
 }
 
 .info-contato {
-  width: 35%; /* Tamanho da área de contato */
-  text-align: left; /* Alinha o texto à esquerda */
-  margin-top: 270px; 
+  width: 35%;
+  /* Tamanho da área de contato */
+  text-align: left;
+  /* Alinha o texto à esquerda */
+  margin-top: 270px;
   border: solid;
   padding-left: 20px;
   padding-bottom: 10px;
@@ -398,98 +454,21 @@ button[type="submit"]:hover {
 
 /* Celular */
 
-/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
-  
-  /* Navbar ajustada para telas pequenas */
-  .navbar {
-    flex-direction: column; /* Torna os itens empilhados verticalmente */
-    height: auto;
-    padding: 15px;
-  }
-
-  .logo {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  .nav-links {
-    flex-direction: column; /* Links empilhados */
-    align-items: flex-start;
-    gap: 15px; /* Menor espaço entre os itens */
-    padding: 0;
-    margin: 0;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
-  }
-
-  /* Ajuste de margens e tamanhos */
-  .home {
-    padding: 10px;
-  }
-
-  /* Ajuste da apresentação */
-  .apresentacao {
-    flex-direction: column; /* Empilha o texto e a imagem verticalmente */
-    align-items: center;
-  }
-
-  .foto img {
-    height: 150px; /* Reduz o tamanho da imagem no celular */
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .intro h1 {
-    font-size: 32px; /* Ajuste do tamanho da fonte */
-  }
-
-  .intro p {
-    font-size: 18px; /* Ajuste do tamanho do parágrafo */
-  }
-
-  .nome {
-    font-size: 24px;
-  }
-
-  /* Galeria de skills */
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Exibe 3 colunas */
-    gap: 10px;
-    padding: 15px;
-  }
-
-  .galeria img {
-    width: 70px;
-    height: 70px;
-    padding: 5px;
-  }
-
-  /* Rodapé */
-  .footer {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-}
-
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-
-  .container{
+  .container {
     flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .sobre-secao p {
     width: 80%;
   }
-  
-  /* Navbar ajustada para telas pequenas */
+
   .navbar {
-    flex-direction: column; /* Torna os itens empilhados verticalmente */
+    flex-direction: column;
     height: auto;
     padding: 15px;
   }
@@ -500,9 +479,9 @@ button[type="submit"]:hover {
   }
 
   .nav-links {
-    flex-direction: column; /* Links empilhados */
+    flex-direction: column;
     align-items: flex-start;
-    gap: 15px; /* Menor espaço entre os itens */
+    gap: 15px;
     padding: 0;
     margin: 0;
   }
@@ -511,39 +490,36 @@ button[type="submit"]:hover {
     margin: 10px 0;
   }
 
-  /* Ajuste de margens e tamanhos */
   .home {
     padding: 10px;
   }
 
-  /* Ajuste da apresentação */
   .apresentacao {
-    flex-direction: column; /* Empilha o texto e a imagem verticalmente */
+    flex-direction: column;
     align-items: center;
   }
 
   .foto img {
-    height: 150px; /* Reduz o tamanho da imagem no celular */
+    height: 150px;
     margin-left: 0;
     margin-top: 10px;
   }
 
   .intro h1 {
-    font-size: 32px; /* Ajuste do tamanho da fonte */
+    font-size: 32px;
   }
 
   .intro p {
-    font-size: 18px; /* Ajuste do tamanho do parágrafo */
+    font-size: 18px;
   }
 
   .nome {
     font-size: 24px;
   }
 
-  /* Galeria de skills */
   .galeria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Exibe 3 colunas */
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 15px;
   }
@@ -554,23 +530,32 @@ button[type="submit"]:hover {
     padding: 5px;
   }
 
-  /* Rodapé */
   .footer {
     padding: 10px;
     font-size: 14px;
   }
 
+  .sobre-secao {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center;    /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    text-align: center;      /* Centraliza o texto */
+    margin-top: auto;        /* Mantém a margem superior automática */
+  }
 }
+
 
 
 /* Celular */
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
-  
+
   /* Navbar ajustada para telas pequenas */
   .navbar {
-    flex-direction: column; /* Torna os itens empilhados verticalmente */
+    flex-direction: column;
+    /* Torna os itens empilhados verticalmente */
     height: auto;
     padding: 15px;
   }
@@ -581,9 +566,11 @@ button[type="submit"]:hover {
   }
 
   .nav-links {
-    flex-direction: column; /* Links empilhados */
+    flex-direction: column;
+    /* Links empilhados */
     align-items: flex-start;
-    gap: 15px; /* Menor espaço entre os itens */
+    gap: 15px;
+    /* Menor espaço entre os itens */
     padding: 0;
     margin: 0;
   }
@@ -599,22 +586,26 @@ button[type="submit"]:hover {
 
   /* Ajuste da apresentação */
   .apresentacao {
-    flex-direction: column; /* Empilha o texto e a imagem verticalmente */
+    flex-direction: column;
+    /* Empilha o texto e a imagem verticalmente */
     align-items: center;
   }
 
   .foto img {
-    height: 150px; /* Reduz o tamanho da imagem no celular */
+    height: 150px;
+    /* Reduz o tamanho da imagem no celular */
     margin-left: 0;
     margin-top: 10px;
   }
 
   .intro h1 {
-    font-size: 32px; /* Ajuste do tamanho da fonte */
+    font-size: 32px;
+    /* Ajuste do tamanho da fonte */
   }
 
   .intro p {
-    font-size: 18px; /* Ajuste do tamanho do parágrafo */
+    font-size: 18px;
+    /* Ajuste do tamanho do parágrafo */
   }
 
   .nome {
@@ -624,7 +615,8 @@ button[type="submit"]:hover {
   /* Galeria de skills */
   .galeria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Exibe 3 colunas */
+    grid-template-columns: repeat(3, 1fr);
+    /* Exibe 3 colunas */
     gap: 10px;
     padding: 15px;
   }
@@ -641,9 +633,61 @@ button[type="submit"]:hover {
     font-size: 14px;
   }
 
+  .projects-grid {
+    flex-direction: column; /* Alinha os projetos verticalmente em telas pequenas */
+    align-items: center; /* Centraliza os cards de projeto no eixo transversal */
+    display: flex;
+  }
+
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo no eixo horizontal */
+  justify-content: center; /* Centraliza no eixo vertical */
+  text-align: center; /* Centraliza o texto */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Contorno translúcido */
+}
+
+/* .projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; Alinha os project-cards no centro
+  gap: 30px;
+  padding: 20px;
+} */
 
 
+.project-card img {
+  max-width: 100%; /* Limita a largura da imagem ao contêiner */
+  border-radius: 18px;
+  margin-bottom: 15px; /* Espaçamento entre a imagem e o texto */
+  transition: transform 0.3s ease;
+}
 
+.project-links {
+  display: flex;
+  justify-content: center; /* Alinha os botões de links no centro */
+  gap: 15px; /* Espaço entre os botões */
+}
 
+.project-links a {
+  background-color: #333;
+  color: #18ceee;
+  padding: 9px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+  background-color: #18ceee;
+  color: #333;
+}
