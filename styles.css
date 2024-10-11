@@ -70,7 +70,6 @@ body {
   height: 50px;
   position: sticky;
   z-index: 1000;
-  width: 100%;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -332,7 +331,7 @@ img:hover {
   max-width: 800px;
   margin: 0 auto 20px;
 
-  a{
+  a {
     color: #0056b3;
     font-weight: 400;
   }
@@ -726,7 +725,7 @@ button[type="submit"]:hover {
     padding: 15px;
   }
 
-  .texto-apresentacao h1{
+  .texto-apresentacao h1 {
     align-items: center;
   }
 
