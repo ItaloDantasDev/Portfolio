@@ -190,26 +190,19 @@ img:hover{
     display: inline;
     border-radius: 18px;
     padding: 10px;
-  
   }
 }
 
-
-  
 
 .projects-grid {
   display: flex; /* Torna o container um flexbox */
   flex-wrap: wrap; /* Permite que os itens passem para a linha seguinte, se necessário */
   justify-content: space-between; /* Distribui os itens horizontalmente com espaço entre eles */
   gap: 20px; /* Espaçamento entre os project-cards */
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 30px;
 
-  h2{
-    margin-top: 100px;
-  }
 }
-
 
 .sobre-secao{
   margin-left: 30px;
@@ -225,7 +218,7 @@ img:hover{
 .sobre-secao h2 {
   font-size: 2.5rem;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .sobre-secao p {
