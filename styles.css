@@ -50,6 +50,8 @@ body {
   /* Cor do texto para contraste */
 }
 
+
+
 .logo {
   display: flex;
   flex-direction: column;
@@ -150,7 +152,7 @@ a:hover {
 .intro h1 {
   font-size: 48px;
   margin-bottom: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 .intro p {
@@ -185,7 +187,7 @@ Inicio da parte de Projetos ----------------------------------------------------
   color: #333;
 }
 
-.container-projetos h2:hover{
+.container-projetos h2:hover {
   color: #18ceee;
 }
 
@@ -201,7 +203,7 @@ img:hover {
   transform: scale(1.1);
 }
 
-.project-links a{
+.project-links a {
   background-color: #333;
   font-weight: bold;
   color: #18ceee;
@@ -219,7 +221,7 @@ img:hover {
 
   /* Projetos */
   h2 {
-    color:aliceblue;
+    color: aliceblue;
     background-color: rgba(0, 0, 0, 0.700);
     display: inline;
     border-radius: 18px;
@@ -240,8 +242,10 @@ img:hover {
   margin-top: 40px;
   margin-bottom: 30px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Garante três colunas de tamanho igual */
-  gap: 20px; /* Espaçamento entre os cards */
+  grid-template-columns: repeat(3, 1fr);
+  /* Garante três colunas de tamanho igual */
+  gap: 20px;
+  /* Espaçamento entre os cards */
   margin-top: 40px;
   margin-bottom: 30px;
 
@@ -297,7 +301,7 @@ img:hover {
   color: #fff;
   text-align: center;
   padding: 20px;
-  position: relative;
+  position: static;
   bottom: 0;
   width: 100%;
 }
@@ -327,6 +331,11 @@ img:hover {
   color: #666;
   max-width: 800px;
   margin: 0 auto 20px;
+
+  a{
+    color: #0056b3;
+    font-weight: 400;
+  }
 }
 
 /* Estilos do Formulário */
@@ -452,9 +461,14 @@ button[type="submit"]:hover {
 
 }
 
-/* Celular */
+/* Celular -----------------------------------------------------------------*/
 
 @media (max-width: 768px) {
+
+  .texto-apresentacao {
+    margin-top: 30px;
+  }
+
   .container {
     flex-direction: column;
     display: flex;
@@ -533,18 +547,24 @@ button[type="submit"]:hover {
   .footer {
     padding: 10px;
     font-size: 14px;
+    margin-top: 180px;
   }
 
   .sobre-secao {
     display: flex;
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    align-items: center;    /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
-    text-align: center;      /* Centraliza o texto */
-    margin-top: auto;        /* Mantém a margem superior automática */
+    flex-direction: column;
+    /* Empilha os elementos verticalmente */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    margin-top: auto;
+    /* Mantém a margem superior automática */
   }
-}
 
+}
 
 
 /* Celular */
@@ -579,10 +599,6 @@ button[type="submit"]:hover {
     margin: 10px 0;
   }
 
-  /* Ajuste de margens e tamanhos */
-  .home {
-    padding: 10px;
-  }
 
   /* Ajuste da apresentação */
   .apresentacao {
@@ -621,21 +637,23 @@ button[type="submit"]:hover {
     padding: 15px;
   }
 
+  .info-contato {
+    padding: 40px;
+    margin-bottom: 10px;
+  }
+
   .galeria img {
     width: 70px;
     height: 70px;
     padding: 5px;
   }
 
-  /* Rodapé */
-  .footer {
-    padding: 10px;
-    font-size: 14px;
-  }
 
   .projects-grid {
-    flex-direction: column; /* Alinha os projetos verticalmente em telas pequenas */
-    align-items: center; /* Centraliza os cards de projeto no eixo transversal */
+    flex-direction: column;
+    /* Alinha os projetos verticalmente em telas pequenas */
+    align-items: center;
+    /* Centraliza os cards de projeto no eixo transversal */
     display: flex;
   }
 
@@ -644,15 +662,20 @@ button[type="submit"]:hover {
 .project-card {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo no eixo horizontal */
-  justify-content: center; /* Centraliza no eixo vertical */
-  text-align: center; /* Centraliza o texto */
+  align-items: center;
+  /* Centraliza o conteúdo no eixo horizontal */
+  justify-content: center;
+  /* Centraliza no eixo vertical */
+  text-align: center;
+  /* Centraliza o texto */
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Contorno translúcido */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Fundo translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Contorno translúcido */
 }
 
 /* .projects-grid {
@@ -665,16 +688,20 @@ button[type="submit"]:hover {
 
 
 .project-card img {
-  max-width: 100%; /* Limita a largura da imagem ao contêiner */
+  max-width: 100%;
+  /* Limita a largura da imagem ao contêiner */
   border-radius: 18px;
-  margin-bottom: 15px; /* Espaçamento entre a imagem e o texto */
+  margin-bottom: 15px;
+  /* Espaçamento entre a imagem e o texto */
   transition: transform 0.3s ease;
 }
 
 .project-links {
   display: flex;
-  justify-content: center; /* Alinha os botões de links no centro */
-  gap: 15px; /* Espaço entre os botões */
+  justify-content: center;
+  /* Alinha os botões de links no centro */
+  gap: 15px;
+  /* Espaço entre os botões */
 }
 
 .project-links a {
@@ -690,4 +717,73 @@ button[type="submit"]:hover {
 .project-links a:hover {
   background-color: #18ceee;
   color: #333;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .texto-apresentacao h1{
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .home {
+    padding: 10px;
+  }
+
+  .apresentacao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto img {
+    height: 150px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .intro p {
+    font-size: 18px;
+  }
+
+  .nome {
+    font-size: 24px;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .galeria img {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+  }
+
 }
