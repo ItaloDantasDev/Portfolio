@@ -11,8 +11,6 @@ main {
   /* Faz o main expandir para ocupar o espaço disponível */
 }
 
-/* Estilização do footer */
-
 
 body,
 html {
@@ -25,13 +23,13 @@ html {
   font-family: "Space Grotesk", sans-serif;
 }
 
-.space-grotesk-spacefont {
+/* Fonte */
+.space-grotesk-spacefont { 
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-
 
 /* Adicionando uma imagem de fundo ao body */
 body {
@@ -71,6 +69,7 @@ body {
   position: sticky;
   z-index: 1000;
   font-family: "Space Grotesk", sans-serif;
+  width: 100%;
 }
 
 
@@ -167,6 +166,8 @@ p {
 .galeria {
   background-color: #333;
   border-radius: 18px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px;
 
 }
 
@@ -786,3 +787,4 @@ button[type="submit"]:hover {
   }
 
 }
+
