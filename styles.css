@@ -264,7 +264,7 @@ img:hover{
   color: rgb(100, 116, 131);
 }
 
-/* Contato */
+/* Contato ------------------------------------------------------------------*/
 
 
 /* Seção Contato */
@@ -485,6 +485,14 @@ button[type="submit"]:hover {
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
+
+  .container{
+    flex-direction: column;
+  }
+
+  .sobre-secao p {
+    width: 80%;
+  }
   
   /* Navbar ajustada para telas pequenas */
   .navbar {
