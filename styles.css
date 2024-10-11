@@ -2,10 +2,11 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: Arial;
+  /* font-family: Arial; */
   height: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .space-grotesk-spacefont {
@@ -23,7 +24,7 @@ body {
   background-position: center; /* Centraliza a imagem */
   background-repeat: no-repeat; /* Impede que a imagem se repita */
   background-attachment: fixed; /* A imagem fica fixa ao rolar a página */
-  font-family: Arial, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   color: white; /* Cor do texto para contraste */
 }
 
@@ -76,7 +77,6 @@ a:hover {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('caminho/para/sua-imagem.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -105,6 +105,7 @@ a:hover {
   background-color: #333;
   border-radius: 18px;
   margin-top: 10px ;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -209,20 +210,6 @@ img:hover{
   }
 }
 
-@media (max-width: 600px) {
-  .navbar {
-      flex-direction: column; /* Empilha os elementos na navbar */
-      align-items: flex-start;
-  }
-
-  .nav-links {
-      flex-direction: column; /* Lista os links verticalmente */
-  }
-
-  .nav-links li {
-      margin: 10px 0; /* Espaçamento vertical entre os links */
-  }
-}
 
 .sobre-secao{
   margin-left: 30px;
@@ -250,7 +237,6 @@ img:hover{
   margin-bottom: 60px;
   font-weight: 400;
 
-  
   background: rgba(144, 151, 212, 0.3); 
   backdrop-filter: blur(1px); /* Desfoque de fundo */
   border: 1px solid rgba(56, 41, 41, 0.3); /* Borda semi-transparente */
@@ -416,6 +402,246 @@ button[type="submit"]:hover {
   font-size: 1rem;
 
 }
+
+/* Celular */
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  
+  /* Navbar ajustada para telas pequenas */
+  .navbar {
+    flex-direction: column; /* Torna os itens empilhados verticalmente */
+    height: auto;
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Links empilhados */
+    align-items: flex-start;
+    gap: 15px; /* Menor espaço entre os itens */
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Ajuste de margens e tamanhos */
+  .home {
+    padding: 10px;
+  }
+
+  /* Ajuste da apresentação */
+  .apresentacao {
+    flex-direction: column; /* Empilha o texto e a imagem verticalmente */
+    align-items: center;
+  }
+
+  .foto img {
+    height: 150px; /* Reduz o tamanho da imagem no celular */
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .intro h1 {
+    font-size: 32px; /* Ajuste do tamanho da fonte */
+  }
+
+  .intro p {
+    font-size: 18px; /* Ajuste do tamanho do parágrafo */
+  }
+
+  .nome {
+    font-size: 24px;
+  }
+
+  /* Galeria de skills */
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exibe 3 colunas */
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .galeria img {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+  }
+
+  /* Rodapé */
+  .footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  
+  /* Navbar ajustada para telas pequenas */
+  .navbar {
+    flex-direction: column; /* Torna os itens empilhados verticalmente */
+    height: auto;
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Links empilhados */
+    align-items: flex-start;
+    gap: 15px; /* Menor espaço entre os itens */
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Ajuste de margens e tamanhos */
+  .home {
+    padding: 10px;
+  }
+
+  /* Ajuste da apresentação */
+  .apresentacao {
+    flex-direction: column; /* Empilha o texto e a imagem verticalmente */
+    align-items: center;
+  }
+
+  .foto img {
+    height: 150px; /* Reduz o tamanho da imagem no celular */
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .intro h1 {
+    font-size: 32px; /* Ajuste do tamanho da fonte */
+  }
+
+  .intro p {
+    font-size: 18px; /* Ajuste do tamanho do parágrafo */
+  }
+
+  .nome {
+    font-size: 24px;
+  }
+
+  /* Galeria de skills */
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exibe 3 colunas */
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .galeria img {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+  }
+
+  /* Rodapé */
+  .footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+}
+
+
+/* Celular */
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  
+  /* Navbar ajustada para telas pequenas */
+  .navbar {
+    flex-direction: column; /* Torna os itens empilhados verticalmente */
+    height: auto;
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Links empilhados */
+    align-items: flex-start;
+    gap: 15px; /* Menor espaço entre os itens */
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Ajuste de margens e tamanhos */
+  .home {
+    padding: 10px;
+  }
+
+  /* Ajuste da apresentação */
+  .apresentacao {
+    flex-direction: column; /* Empilha o texto e a imagem verticalmente */
+    align-items: center;
+  }
+
+  .foto img {
+    height: 150px; /* Reduz o tamanho da imagem no celular */
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .intro h1 {
+    font-size: 32px; /* Ajuste do tamanho da fonte */
+  }
+
+  .intro p {
+    font-size: 18px; /* Ajuste do tamanho do parágrafo */
+  }
+
+  .nome {
+    font-size: 24px;
+  }
+
+  /* Galeria de skills */
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exibe 3 colunas */
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .galeria img {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+  }
+
+  /* Rodapé */
+  .footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+}
+
 
 
 
